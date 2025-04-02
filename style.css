@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.car-banner {
+    margin-bottom: 20px;
+}
+
+.car-banner img {
+    width: 100px;
+    margin: 5px;
+    animation: float 2s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-10px); }
+}
+
+.recent-input {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.recent-input.animate {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    /* "th, td" is a group selector */
+    border: 1px solid white;
+    padding: 10px;
+}
+
+#celebration {
+    /* # targets a hash */
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.celebrate {
+    animation: flash 0.5s ease-in-out;
+}
+
+.breakdown {
+    /* . targets a class */
+
+    margin-top: 5px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+button {
+    /* all buttons */
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@keyframes flash {
+    /* @ targets a CSS rule, in this case animations (keyframes) */
+    0% { background-color: rgba(255, 0, 0, 0.5); }
+    50% { background-color: rgba(255, 255, 0, 0.7); }
+    100% { background-color: transparent; }
+}
+
+#confetti-canvas {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
