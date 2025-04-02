@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Car Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="car-banner">
+        <img src="images/red_car.png" alt="Red Car">
+        <img src="images/red_car.png" alt="Red Car">
+        <img src="images/red_car.png" alt="Red Car">
+        <img src="images/red_car.png" alt="Red Car">
+        <img src="images/red_car.png" alt="Red Car">
+    </div>
+
+    <div id="recentInputDisplay" class="recent-input"></div>
+
+    <input type="text" id="inputField" placeholder="Type a name and press Enter">
+
+    <table id="historyTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Input</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="celebration"></div>
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
