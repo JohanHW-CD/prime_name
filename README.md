@@ -5,3 +5,6 @@ So, like any responsible adult, I built a website to drunk-talk about primes —
 
 ## Be a good vibe
 Feel free to give good ideas, it'll be its own website next week.
+
+
+I am adding a cesar cipher check as well, and Prime Name Combo notificatios for first and last name
